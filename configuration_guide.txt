@@ -1,0 +1,2 @@
+1. To add/remove sections from the pages, go to _config.yml and udpate sections under "header_pages". Jekyll will need a restart.
+2. 
