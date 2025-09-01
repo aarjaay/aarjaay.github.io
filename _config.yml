@@ -24,10 +24,10 @@ github_username:  rajattjainnn
 
 header_pages:
 #  - _pages/integral.md
-  - _pages/log.md
+#  - _pages/log.md
 #  - _pages/interpersonal.md
   - _pages/creatives.md
-  - _pages/cv.md
+#  - _pages/cv.md
 
 collections:
   integral:
