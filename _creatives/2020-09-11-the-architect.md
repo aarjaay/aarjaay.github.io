@@ -2,7 +2,7 @@
 layout: post
 title: "The Architect"
 redirect_from:
-  - /202/09/11/
+  - /2020/09/11/
 ---
 
 
