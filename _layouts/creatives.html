@@ -6,13 +6,21 @@ layout: default
 
   {{ content }}
 
-  
   {%- if site.creatives.size > 0 -%}
-  {% assign posts = site.creatives | sort: 'date' | reverse %}
+    {% assign posts = site.creatives | sort: 'date' | reverse %}
 
     <ul class="post-list">
       {%- for post in posts -%}
-      <li> <span class="post-meta">{{ post.date | date: "%B %-d %Y" }}</span> <a class="post-link" href="{{ post.url | relative_url }}"> {{ post.title | escape }} </a></li>
+      <li>
+        <span class="post-meta">{{ post.date | date: "%B %-d %Y" }}</span>
+        <a class="post-link" href="{{ post.url | relative_url }}">
+          {%- if post.custom_title -%}
+            {{ post.custom_title }}
+          {%- else -%}
+            {{ post.title }}
+          {%- endif -%}
+        </a>
+      </li>
       {%- endfor -%}
     </ul>
   {%- endif -%}
